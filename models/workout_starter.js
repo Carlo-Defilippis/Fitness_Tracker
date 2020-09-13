@@ -13,24 +13,36 @@ const workoutSchema = new Schema(
       // Schema for each item in exercises array
       {
         type: {
+          type: String,
+          trim: true,
+          required: "Enter the type of exercise you will be doing."
           // For the schema of this attribute, define type and trim and required
         },
         name: {
+          type: String,
+          trim: true,
+          required: "Enter the name of the exercise."
           // For the schema of this attribute, define type and trim and required
         },
         duration: {
+          type: Number,
+          required: "Enter the amount of minutes you will be doing this exercise."
           // For the schema of this attribute, define type as number and its required
         },
         weight: {
+          type: Number,
           // For the schema of this attribute, define type as number
         },
         reps: {
+          type: Number,
           // For the schema of this attribute, define type as number
         },
         sets: {
+          type: Number,
           // For the schema of this attribute, define type as number
         },
         distance: {
+          type: Number
           // For the schema of this attribute, define type as number
         },
       },
