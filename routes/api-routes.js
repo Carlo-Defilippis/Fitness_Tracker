@@ -9,7 +9,7 @@ router.post('/api/workouts', ({body}, res) => {
   Workout.create({body})
     // Fill in .then() with call back function that takes result from db as input argument and send it back to browser
     .then(data =>{
-        res.json(data)
+        res.json(data);
     })
     // Fill in .catch() with call back function that takes error as input argument and send it back to browser
     .catch(err =>{
@@ -30,7 +30,7 @@ router.put('/api/workouts/:id', ({body, params}, res) => {
   )
     // Fill in .then() with call back function that takes result from db as input argument and send it back to browser
     .then(data =>{
-        res.json(data)
+        res.json(data);
     })
     // Fill in .catch() with call back function that takes error as input argument and send it back to browser
     .catch(err => {
@@ -42,7 +42,7 @@ router.get('/api/workouts', (req, res) => {
   Workout.find({})
     // Fill in .then() with call back function that takes result from db as input argument and send it back to browser
     .then(data => {
-        res.json(data)
+        res.json(data);
     })
     // Fill in .catch() with call back function that takes error as input argument and send it back to browser
     .catch(err => {
@@ -56,7 +56,7 @@ router.get('/api/workouts/range', (req, res) => {
   Workout.find({}).sort({date: -1}).limit(7)
     // Fill in .then() with call back function that takes result from db as input argument and send it back to browser
     .then(data => {
-        res.json(data)
+        res.json(data);
     })
     // Fill in .catch() with call back function that takes error as input argument and send it back to browser
     .catch(err => {
@@ -71,11 +71,11 @@ router.delete('/api/workouts', ({ body }, res) => {
   Workout.remove({})
     // Fill in .then() with call back function that takes no input argument and send boolean 'true' back to browser
     .then(data => {
-        res.json(data)
+        res.json(data);
     })
     // Fill in .catch() with call back function that takes error as input argument and send it back to browser
     .catch(err => {
-        res.json(err)
+        res.json(err);
     });
 });
 module.exports = router;
