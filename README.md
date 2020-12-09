@@ -1,6 +1,6 @@
 # Fitness Tracker
 
-Fitness Tracker is a Semantic and MongoDB application that allows users to add work outs and track them via a graph system.  The backend technologies Node, Express, and MongoDB.
+Fitness Tracker is a Semantic and MongoDB application that allows users to add work outs and track them via a graph system.  The backend technologies include Node, Express, and MongoDB.
 
 ![Fitness Chart](https://raw.githubusercontent.com/Carlo-Defilippis/Fitness_Tracker/master/models/fitness.png)
 
